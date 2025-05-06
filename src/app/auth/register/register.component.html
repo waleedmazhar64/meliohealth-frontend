@@ -1,0 +1,97 @@
+<app-auth-layout>
+	<form [formGroup]="form" (ngSubmit)="register()" *ngIf="!showOtp">
+                    <div class="onboard_wrapper">
+                        <div class="onboard_title text-center">
+                            <img src="/assets/images/logo.png" alt="">
+                            <h2>{{ isAdmin ? 'Admin' : 'Patient' }} Sign Up</h2>
+                            <p>Please enter your details below</p>
+                        </div>
+                        <div class="onboard_item">
+                            <div class="onboard_text">
+                                <label>Full Name</label>
+                                <input formControlName="name" type="text" placeholder="Alexa John" required>
+                            </div>
+                            <div class="onboard_text">
+                                <label>Email</label>
+                                <input formControlName="email" type="email" placeholder="alexa_john@gmail.com" required>
+                            </div>
+                            <div class="onboard_text" *ngIf="isAdmin">
+                                <label>Role</label>
+                                <select formControlName="role">
+							      <option value="admin">Admin</option>
+							      <option value="provider">Provider</option>
+							    </select>
+                            </div>
+                            <div class="onboard_text">
+                                <label>Password</label>
+                                <div class="password_field">
+                                    <input formControlName="password" type="password" id="password1" name="password1" placeholder="****" required>
+                                    <span class="togglePassword" data-target="password1">
+                                        <img src="/assets/images/eye-slash.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="onboard_text mb-0">
+                                <label>Confirm Password</label>
+                               <div class="password_field">
+                                    <input formControlName="password_confirmation" type="password" id="password2" name="password2" placeholder="****" required>
+                                    <span class="togglePassword" data-target="password2">
+                                        <img src="/assets/images/eye-slash.svg" alt="">
+                                    </span>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="onboard_bottom text-center">
+                            <button type="submit">Sign Up</button>
+                            <p>Already have an account? <a routerLink="/login">Sign In</a></p>
+                        </div>
+                    </div>
+                </form>
+
+               <form [formGroup]="otpForm" (ngSubmit)="verifyOtp()" *ngIf="showOtp">
+  <div class="onboard_wrapper">
+    <div class="back_btn">
+      <a (click)="cancelOtp()" style="cursor:pointer;">
+        <img src="assets/images/left-arrow.svg" alt="Back" />
+      </a>
+    </div>
+
+    <div class="onboard_title text-center">
+      <img src="assets/images/logo.png" alt="Logo" />
+      <h2>Verification OTP</h2>
+      <p>Please enter the 6-digit code sent to your email</p>
+    </div>
+
+    <div class="onboard_item">
+      <div class="otp_item">
+        <input
+          formControlName="otp"
+          maxlength="6"
+          minlength="6"
+          pattern="[0-9]*"
+          inputmode="numeric"
+          class="otp_input"
+          placeholder="______"
+          style="text-align: center; font-size: 24px; letter-spacing: 10px;"
+        />
+      </div>
+
+      <div class="otp_cnt text-center">
+  <p *ngIf="resendDisabled">
+    Didn’t receive a code?
+    <span class="text-muted">Resend in {{ resendCountdown }}s</span>
+  </p>
+  <p *ngIf="!resendDisabled">
+    Didn’t receive a code?
+    <a href="#" (click)="resendOtp($event)">Resend</a>
+  </p>
+</div>
+    </div>
+
+    <div class="onboard_bottom text-center">
+      <button type="submit">Submit</button>
+    </div>
+  </div>
+</form>
+
+</app-auth-layout>

@@ -1,0 +1,33 @@
+<app-auth-layout>
+<form (submit)="login()" #signInForm="ngForm">
+                    <div class="onboard_wrapper">
+                        <div class="onboard_title text-center">
+                            <img src="/assets/images/logo.png" alt="">
+                            <h2>Sign In</h2>
+                            <p>Please enter your details below</p>
+                        </div>
+                        <div class="onboard_item">
+                            <div class="onboard_text">
+                                <label>Email</label>
+                                <input [(ngModel)]="email" name="email" type="email" placeholder="alexa_john@gmail.com" required>
+                            </div>
+                            <div class="onboard_text">
+                                <label>Password</label>
+                                <div class="password_field">
+                                    <input [(ngModel)]="password" type="password" id="password1" name="password1" placeholder="****" required>
+                                    <span class="togglePassword" data-target="password1">
+                                        <img src="/assets/images/eye-slash.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="onboard_inner text-end">
+                                    <a routerLink="/forgot-password">Forgot Password?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="onboard_bottom text-center">
+                            <button [disabled]="!signInForm.valid" type="submit">Sign In</button>
+                            <p>Don’t have an account? <a routerLink="/register">Sign Up</a></p>
+                        </div>
+                    </div>
+                </form>
+            </app-auth-layout>

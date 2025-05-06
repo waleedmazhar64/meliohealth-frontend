@@ -1,0 +1,94 @@
+<app-layout>
+
+	<main>
+
+            <!-- support_area start -->
+            <section class="support_area">
+                <div class="container">
+                    <div class="support_title text-center">
+                        <h2>Support</h2>
+                    </div>
+                    <div class="support_main">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <div class="support_left">
+                                    <div class="accordion_item">
+                                        <div class="accordion_title">
+                                            <h4>How does it work?</h4>
+                                            <img src="/assets/images/plus.svg" alt="">
+                                        </div>
+                                        <div class="accordion_body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Beatae earum in saepe ducimus minus, nam, recusandae tenetur magni explicabo quae adipisci debitis. Magni, quis expedita! Nobis porro beatae dolores, alias.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion_item">
+                                        <div class="accordion_title">
+                                            <h4>What kind of ai you cover?</h4>
+                                            <img src="/assets/images/plus.svg" alt="">
+                                        </div>
+                                        <div class="accordion_body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Beatae earum in saepe ducimus minus, nam, recusandae tenetur magni explicabo quae adipisci debitis. Magni, quis expedita! Nobis porro beatae dolores, alias.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion_item">
+                                        <div class="accordion_title">
+                                            <h4>How do you select the medicnes?</h4>
+                                            <img src="/assets/images/plus.svg" alt="">
+                                        </div>
+                                        <div class="accordion_body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Beatae earum in saepe ducimus minus, nam, recusandae tenetur magni explicabo quae adipisci debitis. Magni, quis expedita! Nobis porro beatae dolores, alias.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion_item">
+                                        <div class="accordion_title">
+                                            <h4>Do you offer refunds?</h4>
+                                            <img src="/assets/images/plus.svg" alt="">
+                                        </div>
+                                        <div class="accordion_body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Beatae earum in saepe ducimus minus, nam, recusandae tenetur magni explicabo quae adipisci debitis. Magni, quis expedita! Nobis porro beatae dolores, alias.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion_item">
+                                        <div class="accordion_title">
+                                            <h4>Can I suggest studies and/or topics to be summarized?</h4>
+                                            <img src="/assets/images/plus.svg" alt="">
+                                        </div>
+                                        <div class="accordion_body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Beatae earum in saepe ducimus minus, nam, recusandae tenetur magni explicabo quae adipisci debitis. Magni, quis expedita! Nobis porro beatae dolores, alias.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="support_right">
+                                    <h3>Contact Support For Any Query</h3>
+                                    <form [formGroup]="form" (ngSubmit)="submitSupport()">
+                                        <div class="contact_item">
+                                            <label>Name</label>
+                                            <input type="text" formControlName="name" placeholder="Alexa John" required>
+                                        </div>
+                                        <div class="contact_item">
+                                            <label>Email</label>
+                                            <input type="email" formControlName="email" placeholder="alexa_john@gmail.com" required>
+                                        </div>
+                                        <div class="contact_item">
+                                            <label>Message</label>
+                                            <textarea formControlName="message" placeholder="Write..." required></textarea>
+                                        </div>
+                                        <div class="contact_btn">
+                                            <a routerLink="/home">Live Chat</a>
+                                            <button type="submit">Send</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </section>
+            <!-- support_area end -->
+
+
+        </main>
+
+</app-layout>

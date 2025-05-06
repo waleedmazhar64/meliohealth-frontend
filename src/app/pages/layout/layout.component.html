@@ -1,0 +1,148 @@
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#007472" type = "line-scale" [fullScreen] = "true"></ngx-spinner>
+<!-- header_area start -->
+        <header class="header_area">
+            <div class="container">
+                <nav class="main_nav">
+                    <div class="header_logo">
+                        <a routerLink="/home">
+                            <img src="/assets/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header_menu d-none d-lg-block">
+                        <ul>
+                            <li><a routerLink="/home" class="active">Home</a></li>
+                            <li><a href="#choose_area">Features</a></li>
+                            <li><a href="#benefit_area">Testimonials</a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#pricingModal">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="header_btn d-none d-lg-block">
+                        <ul>
+                            <li><a routerLink="/login">Log In</a></li>
+                            <li><a routerLink="/register" class="active">Sign Up</a></li>
+                        </ul>
+                    </div>
+                    <div class="hamburger_btn d-lg-none">
+                        <div class="hamburger-menu">
+                            <span class="line-top"></span>
+                            <span class="line-center"></span>
+                            <span class="line-bottom"></span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Ofcanvas-menu -->
+            <div class="ofcavas-menu d-lg-none">
+               <div class="container">
+                    <div class="header_menu">
+                        <ul>
+                            <li><a routerLink="home" class="active">Home</a></li>
+                            <li><a href="#choose_area">Features</a></li>
+                            <li><a href="benefit_area">Testimonials</a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#pricingModal">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="header_btn">
+                        <ul>
+                            <li><a routerLink="/login">Log In</a></li>
+                            <li><a routerLink="/register" class="active">Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header_area end -->
+
+        <ng-content></ng-content>
+
+
+        <!-- footer_area start -->
+        <footer class="footer_area">
+            <div class="container">
+                <div class="footer_main">
+                    <div class="footer_logo">
+                        <a routerLink="/home">
+                            <img src="/assets/images/logo-white.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer_cnt">
+                        <p>&copy; Copyright 2025 All Rights Reserved</p>
+                    </div>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a routerLink="/support">Support</a></li>
+                        </ul>
+                        <div class="social_media">
+                            <ul>
+                                <li><a href="#"><img src="/assets/images/twitter.svg" alt=""></a></li>
+                                <li><a href="#"><img src="/assets/images/facebook.svg" alt=""></a></li>
+                                <li><a href="#"><img src="/assets/images/linkedin.svg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer_area end -->
+
+
+        <!-- modal start -->
+        <div class="modal fade" id="pricingModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal_header">
+                        <a routerLink="/home">
+                            <img src="/assets/images/left-square.svg" alt="">
+                        </a>
+                        <h3>Pricing Plans</h3>
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="/assets/images/cross-red.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="modal_body">                        
+                        <div class="plan_area">
+                            <div class="plan_main">
+                                <div class="plan_box">
+                                    <div class="plan_title">
+                                        <h4>Basic Plan</h4>
+                                        <h5>$10</h5>
+                                    </div>
+                                    <div class="plan_item">
+                                        <ul>
+                                            <li><img src="/assets/images/check-circle.svg" alt=""> Lorem Ipsum</li>
+                                            <li><img src="/assets/images/check-circle.svg" alt=""> Lorem Ipsum</li>
+                                            <li><img src="/assets/images/check-circle.svg" alt=""> Lorem Ipsum</li>
+                                        </ul>
+                                        <div class="upgrade_btn">
+                                            <a href="#">Upgrade</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="plan_box active">
+                                    <div class="plan_title">
+                                        <h4>Premium Plan</h4>
+                                        <h5>$10</h5>
+                                    </div>
+                                    <div class="plan_item">
+                                        <ul>
+                                            <li><img src="/assets/images/check-circle.svg" alt=""> Lorem Ipsum</li>
+                                            <li><img src="/assets/images/check-circle.svg" alt=""> Lorem Ipsum</li>
+                                            <li><img src="/assets/images/check-circle.svg" alt=""> Lorem Ipsum</li>
+                                        </ul>
+                                        <div class="upgrade_btn">
+                                            <a href="#">Upgrade</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal_btn text-center">
+                                    <a href="#">Select</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal end -->

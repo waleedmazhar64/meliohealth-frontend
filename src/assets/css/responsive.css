@@ -1,0 +1,621 @@
+/*
+====================================
+Medium Screen - Others
+====================================
+*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    html {
+        font-size: 0.56vw;
+    }
+
+    .support_main .row {
+        --bs-gutter-x: 6rem;
+    }
+
+    .chart_bullet ul li {
+        font-size: 1.5rem;
+    }
+
+    .chart2_circle img {
+        width: 21.3rem;
+    }
+
+    .chart_progress img {
+        width: 21.5rem;
+    }
+
+}
+
+/*
+====================================
+Small Screen - Tablate
+====================================
+*/
+@media (max-width: 991px) {
+
+    .hamburger-menu {
+        display: inline-block;
+    }
+
+    .ofcavas-menu {
+        display: block;
+    }
+
+    .header_area {
+        padding: 2.4rem 0rem;
+    }
+
+    .header_logo a img {
+        width: 18.5rem;
+    }
+
+    .footer_area {
+        padding: 3rem 0rem;
+    }
+
+    .footer_main {
+        flex-direction: column;
+    }
+
+    .footer_cnt {
+        padding: 0;
+        order: 3;
+    }
+
+    .footer_menu {
+        order: 2;
+        display: block;
+        text-align: center;
+        margin: 3rem 0rem 2.5rem;
+    }
+
+    .social_media ul {
+        justify-content: center;
+        margin-top: 2.5rem;
+    }
+
+    .hero_left {
+        padding-top: 4rem;
+    }
+
+    .hero_title h2 {
+        font-size: 4.2rem;
+    }
+
+    .hero_title p {
+        font-size: 2.3rem;
+    }
+
+    .hero_cnt h4 {
+        font-size: 1.85rem;
+    }
+
+    .hero_icon img {
+        width: 5.5rem;
+    }
+
+    .hero_cnt {
+        width: calc(100% - 7rem);
+    }
+
+    .hero_cnt p br {
+        display: none;
+    }
+
+    .benefit_main {
+        margin: 0 auto;
+    }
+
+    .choose_upper,
+    .choose_item {
+        text-align: center;
+    }
+
+    .benefit_right img {
+        margin-top: 2rem;
+    }
+
+    .support_main .row {
+        --bs-gutter-x: 3rem;
+    }
+
+    .support_right {
+        margin-top: 3rem;
+    }
+
+    /* dashboard */
+    .main-left {
+        width: 30rem;
+        z-index: 1024;
+    }
+
+    .dash_logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4.5rem 1.8rem 5rem 2rem;
+    }
+
+    .dash_title {
+        padding-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .search_bar input {
+        width: 100%;
+    }
+
+    .chart_middle,
+    .chart_right {
+        margin-top: 2.5rem;
+    }
+
+    .budget_right {
+        margin-top: 3rem;
+    }
+
+    .chart_bullet ul li {
+        font-size: 1.3rem;
+    }
+
+    .chart_bullet ul li span {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    .chart_progress img {
+        width: 23.3rem;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .container {
+        max-width: 720px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .hero_area {
+        padding: 18rem 0rem 12rem;
+    }
+
+    .step_upper h3,
+    .choose_upper h3 {
+        font-size: 4.2rem;
+    }
+
+    .step_main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4rem;
+    }
+
+    .choose_main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 4rem;
+    }
+
+    .choose_item p br {
+        display: none;
+    }
+
+    /* dashboard */
+    .main-left-col {
+        width: 30rem;
+        height: 100%;
+        background: var(--white);
+        position: fixed;
+        top: 0;
+        left: -120%;
+        overflow-y: scroll;
+        transition: .35s;
+        z-index: 1024;
+    }
+
+    .main-left-col.current {
+        left: 0;
+    }
+
+    .right-mainpart {
+        padding: 12rem 3.5rem 3.5rem;
+    }
+
+    .dashboard_header {
+        width: 100%;
+        background: var(--white);
+        padding: 3rem 3.5rem;
+        border-radius: 0rem 0rem 1rem 1rem;
+        box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 116, 114, 0.15);
+        position: fixed;
+        top: 0;
+        z-index: 9;
+    }
+
+}
+
+/*
+====================================
+Small Screen - Mobile
+====================================
+*/
+@media screen and (max-width: 767px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .container {
+        max-width: 540px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .hero_title h2 {
+        font-size: 3.2rem;
+    }
+
+    .hero_title p {
+        font-size: 2rem;
+    }
+
+    .hero_area {
+        padding: 16.5rem 0rem 9.5rem;
+    }
+
+    .hero_item {
+        margin-bottom: 1.5rem;
+    }
+
+    .hero_btn a {
+        margin-top: 3rem;
+    }
+
+    .step_upper h3,
+    .choose_upper h3 {
+        font-size: 3.2rem;
+    }
+
+    .step_upper p,
+    .choose_upper p {
+        font-size: 2rem;
+    }
+
+    .step_main {
+        grid-template-columns: 1fr;
+        grid-gap: 3rem;
+    }
+
+    .choose_main {
+        grid-template-columns: 1fr;
+        grid-gap: 3rem;
+    }
+
+    .support_area {
+        padding: 14rem 0rem 10rem;
+    }
+
+    .support_title h2 {
+        font-size: 3.6rem;
+    }
+
+    .accordion_title h4 {
+        font-size: 2rem;
+        padding-right: 2rem;
+    }
+
+    .accordion_body p {
+        font-size: 1.7rem;
+    }
+
+    .accordion_item {
+        margin-bottom: 2.5rem;
+    }
+
+    .accordion_title img {
+        width: 1.8rem;
+    }
+
+    .support_right {
+        padding: 3rem 3rem;
+    }
+
+    /* dashboard */
+    .main-left-col {
+        width: 30rem;
+        height: 100%;
+        background: var(--white);
+        position: fixed;
+        top: 0;
+        left: -120%;
+        overflow-y: scroll;
+        transition: .35s;
+        z-index: 1024;
+    }
+
+    .main-left-col.current {
+        left: 0;
+    }
+
+    .right-mainpart {
+        padding: 11rem 2.5rem 3rem;
+    }
+
+    .dashboard_header {
+        width: 100%;
+        background: var(--white);
+        padding: 2.5rem 2.5rem;
+        position: fixed;
+        top: 0;
+        border-radius: 0rem 0rem 1rem 1rem;
+        box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 116, 114, 0.15);
+        z-index: 9;
+    }
+
+    .budget_left table th,
+    .budget_left table td {
+        font-size: 1.7rem;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .container {
+        max-width: 540px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .main_wrapper {
+        padding: 3.5rem 0rem;
+    }
+
+    .onboard_title img {
+        width: 25rem;
+    }
+
+    .back_btn a {
+        left: 2rem;
+        top: 2rem;
+    }
+
+    .hero_title p br,
+    .choose_item p br {
+        display: none;
+    }
+
+    .benefit_right img {
+        width: 100%;
+    }
+
+    .benefit_cnt h4 {
+        line-height: normal;
+    }
+
+    .modal_header {
+        padding: 2.5rem 2rem;
+    }
+
+    .modal_header h3 {
+        font-size: 2.4rem;
+    }
+
+    .modal_header a img {
+        width: 3rem;
+    }
+
+    .modal_header button img {
+        width: 2.8rem;
+    }
+
+    .right-mainpart {
+        padding: 11rem 1.8rem 3rem;
+    }
+
+    .dashboard_header {
+        padding: 2.5rem 2rem;
+    }
+
+    .budget_left table {
+        width: 69rem;
+    }
+
+    .budget_left {
+        overflow-x: scroll;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    html {
+        font-size: 0.56vw;
+    }
+
+}
+
+/*
+====================================
+Small Screen - Tablate
+====================================
+*/
+@media (max-width: 991px) {
+
+    .hamburger-menu {
+        display: inline-block;
+    }
+
+    .main-left {
+        width: 30rem;
+        z-index: 1024;
+    }
+
+    .dash_logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4.5rem 1.8rem 5rem 2rem;
+    }
+
+    .dash_title {
+        padding-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .container {
+        max-width: 720px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .main-left-col {
+        width: 30rem;
+        height: 100%;
+        background: var(--white);
+        position: fixed;
+        top: 0;
+        left: -120%;
+        overflow-y: scroll;
+        transition: .35s;
+        z-index: 1024;
+    }
+
+    .main-left-col.current {
+        left: 0;
+    }
+
+    .right-mainpart {
+        padding: 12rem 3.5rem 3.5rem;
+    }
+
+    .dashboard_header {
+        width: 100%;
+        background: var(--white);
+        padding: 3rem 3.5rem;
+        border-radius: 0rem 0rem 1rem 1rem;
+        box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 116, 114, 0.15);
+        position: fixed;
+        top: 0;
+        z-index: 9;
+    }
+
+    .dash_body {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+}
+
+/*
+====================================
+Small Screen - Mobile
+====================================
+*/
+@media screen and (max-width: 767px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .container {
+        max-width: 540px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .main-left-col {
+        width: 30rem;
+        height: 100%;
+        background: var(--white);
+        position: fixed;
+        top: 0;
+        left: -120%;
+        overflow-y: scroll;
+        transition: .35s;
+        z-index: 1024;
+    }
+
+    .main-left-col.current {
+        left: 0;
+    }
+
+    .right-mainpart {
+        padding: 11rem 2.5rem 3rem;
+    }
+
+    .dashboard_header {
+        width: 100%;
+        background: var(--white);
+        padding: 2.5rem 2.5rem;
+        position: fixed;
+        top: 0;
+        border-radius: 0rem 0rem 1rem 1rem;
+        box-shadow: 0rem 0.4rem 0.4rem 0rem rgba(0, 116, 114, 0.15);
+        z-index: 9;
+    }
+
+    .dash_body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .container {
+        max-width: 540px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .modal_header {
+        padding: 2.5rem 2rem;
+    }
+
+    .modal_header h3 {
+        font-size: 2.4rem;
+    }
+
+    .modal_header a img {
+        width: 3rem;
+    }
+
+    .modal_header button img {
+        width: 2.8rem;
+    }
+
+    .right-mainpart {
+        padding: 11rem 1.8rem 3rem;
+    }
+
+    .dashboard_header {
+        padding: 2.5rem 2rem;
+    }
+
+    .dash_body {
+        grid-template-columns: 1fr;
+    }
+
+}

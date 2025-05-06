@@ -1,0 +1,177 @@
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#007472" type = "line-scale" [fullScreen] = "true"></ngx-spinner>
+<!-- main-wrapper start -->
+        <main class="main-wrapper">
+            <div class="row g-0">
+                <div class="col-lg-3 main-left-col">
+                    <div class="main-left">
+                        <div class="dash_logo">
+                            <a routerLink="/admin">
+                                <img src="/assets/images/logo.png" alt="">
+                            </a>
+                            <div class="hamburger_btn d-lg-none">
+                                <div class="hamburger-menu">
+                                    <span class="line-top"></span>
+                                    <span class="line-center"></span>
+                                    <span class="line-bottom"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-part">
+                            <ul>
+                                <li>
+                                    <a routerLink="/admin" routerLinkActive="active" id="active">
+                                        <img src="/assets/images/dashboard.svg" alt="">
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="/assets/images/setting.svg" alt="">
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logout_bottom">
+                            <a style="cursor: pointer;" (click)="logout()">
+                                <img src="/assets/images/logout.svg" alt="">
+                                <span>Logout</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 main-right-col">
+                    <div class="main-right">
+                        <div class="dashboard_header">
+                            <div class="hamburger_btn d-lg-none">
+                                <div class="hamburger-menu">
+                                    <span class="line-top"></span>
+                                    <span class="line-center"></span>
+                                    <span class="line-bottom"></span>
+                                </div>
+                            </div>
+                            <div class="header_title d-none d-lg-block">
+                                <h2>Dashboard</h2>
+                            </div>
+                            <div class="header_profile">
+                                <a >{{ userName }} <img src="/assets/images/user.png" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="right-mainpart">
+                            <div class="header_title dash_title d-lg-none">
+                                <h2>Dashboard</h2>
+                            </div>
+                            <div class="search_bar">
+                                <input type="text" placeholder="Search">
+                            </div>
+                            <div class="chart_area">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="chart_left">
+                                            <div class="chart_title">
+                                                <h4>Active Subscribers</h4>
+                                            </div>
+                                            <img src="/assets/images/graph.png" alt="">
+                                            <div class="chart_bottom">
+                                                <ul>
+                                                    <li><span></span> Free</li>
+                                                    <li><span class="premium"></span> Premium</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="chart_middle">
+                                            <div class="chart_title">
+                                                <h4>Payment Overview</h4>
+                                            </div>
+                                            <div class="chart2_circle text-center">
+                                                <img src="/assets/images/graph-2.png" alt="">
+                                            </div>
+                                            <div class="chart_bullet">
+                                                <ul>
+                                                    <li><span class="paid"></span> Payed</li>
+                                                    <li><span class="free"></span> Free Users</li>
+                                                    <li><span class="not_paid"></span> Not Payed</li>
+                                                    <li><span class="premium"></span> Premium Users</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="chart_right">
+                                            <div class="chart_title">
+                                                <h4>Total Revenue</h4>
+                                            </div>
+                                            <div class="chart_progress text-center">
+                                                <img src="/assets/images/circle.png" alt="">
+                                            </div>
+                                            <div class="progress_bullet">
+                                                <ul>
+                                                    <li><span class="week"></span> Revenue This Week</li>
+                                                    <li><span class="month"></span> Revenue (This Month)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="budget_area">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="budget_left">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Email</th>
+                                                        <th>Role</th>
+                                                        <th>Status</th>
+                                                        <th>Amount</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr *ngFor="let user of users">
+                                                        <td>{{ user.name }}</td>
+                                                        <td>{{ user.email }}</td>
+                                                        <td>{{ user.role }}</td>
+                                                        <td>
+                                                            <span class="{{ user.status }}">{{ user.status }}</span>
+                                                        </td>
+                                                        <td>${{ user.amount}}</td>
+                                                        <td>
+                                                            <div class="action_item">
+                                                                <ul>
+                                                                    <li><a style="cursor: pointer;" (click)="viewUser(user)"><img src="/assets/images/view.svg" alt=""></a></li>
+                                                                    <li><a style="cursor: pointer;" (click)="deleteUser(user)"><img src="/assets/images/trash.svg" alt=""></a></li>
+                                                                    <li><a style="cursor: pointer;" (click)="toggleUserStatus(user)"><img src="/assets/images/ban.svg" alt=""></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="budget_right">
+                                            <form [formGroup]="form" (ngSubmit)="updatePlans()">
+                                                <label>Set Your Pricing For Free Plan</label>
+                                                <input type="text" formControlName="free_plan" placeholder="$0" required>
+                                                <label>Set Your Pricing For Premium Plan</label>
+                                                <input type="text" formControlName="premium_plan" placeholder="$40" required>
+                                                <button type="submit">Set</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>               
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- main-wrapper end -->
