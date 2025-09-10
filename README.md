@@ -1,27 +1,52 @@
-# MeliohealthFrontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+---
 
-## Development server
+# 🔹 Frontend (Angular) README.md  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```markdown
+# MelioHealth – Frontend (Angular)
 
-## Code scaffolding
+## Overview
+This is the **frontend client** for MelioHealth, a digital healthcare platform enabling patients to manage symptoms and interact with healthcare providers.  
+The Angular app consumes the Laravel backend APIs and provides an intuitive, responsive interface.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
+- **Patient Dashboard**: View and manage symptoms  
+- **Doctor/Provider Dashboard**: Manage patients, appointments, and communication  
+- **Live Video Conferencing**: Real-time consultation using Socket.io  
+- **Payments**: Stripe integration for subscriptions and billing  
+- **Admin Panel**: Role-based dashboards with analytics and reporting  
+- **Responsive UI**: Built with Material UI and Bootstrap for cross-device compatibility  
 
-## Build
+## Technologies
+- **Framework:** Angular (v14+)  
+- **Languages:** TypeScript, JavaScript, HTML5, SCSS  
+- **UI Libraries:** Material UI, Bootstrap, ng-bootstrap, RxJS  
+- **APIs:** REST APIs from Laravel backend  
+- **Deployment:** DigitalOcean, CI/CD pipelines  
+- **Other Tools:** Git, Bitbucket, Jenkins  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation & Setup
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/waleedmazhar64/meliohealth-frontend.git
+   cd meliohealth-frontend
+2. Install dependencies:
+ ```bash
+  npm install
+3. Configure API base URL in environment.ts (point to backend).
 
-## Running unit tests
+4. Run the app:
+```bash
+  ng serve --open
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+**Folder Structure**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+/src/app/modules → Feature modules (dashboard, appointments, admin, etc.)
 
-## Further help
+/src/app/services → API service integrations
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+/src/app/components → Reusable components
+
+
