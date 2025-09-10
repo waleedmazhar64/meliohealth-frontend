@@ -1,6 +1,3 @@
-
----
-
 # 🔹 Frontend (Angular) README.md  
 
 ```markdown
