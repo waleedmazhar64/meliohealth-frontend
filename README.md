@@ -1,6 +1,3 @@
-# 🔹 Frontend (Angular) README.md  
-
-```markdown
 # MelioHealth – Frontend (Angular)
 
 ## Overview
@@ -26,24 +23,23 @@ The Angular app consumes the Laravel backend APIs and provides an intuitive, res
 ## Installation & Setup
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/waleedmazhar64/meliohealth-frontend.git
-   cd meliohealth-frontend
+     git clone https://github.com/waleedmazhar64/meliohealth-frontend.git
+     cd meliohealth-frontend
 2. Install dependencies:
- ```bash
-  npm install
+   ```bash
+     npm install
+  
 3. Configure API base URL in environment.ts (point to backend).
 
 4. Run the app:
-```bash
-  ng serve --open
+    ```bash
+      ng serve --open
 
-
-**Folder Structure**
+## **Folder Structure**
 
 /src/app/modules → Feature modules (dashboard, appointments, admin, etc.)
 
 /src/app/services → API service integrations
 
 /src/app/components → Reusable components
-
 
